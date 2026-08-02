@@ -7,8 +7,15 @@ Ordered by how much they change the build.
 ### 1. A / B / C — the fusion fork
 Laid out in `02`–`05`. Recommendation: **C, built in B's shape.** Still yours to make.
 
-### 2. What are the participants, concretely?
-Still unanswered, and it changes the meaning of nearly every mechanism:
+### 2. What are the participants, concretely? — **ANSWERED**
+**Human and AI, and the distinction must not be collapsed.** See
+[`07-participants.md`](07-participants.md) for what that means mechanically: two registered
+ontologies bridged rather than merged, `kind` as a dispatchable field, opposite `n_eff`
+priors by kind (AI correlated until proven independent; humans independent until proven
+correlated), kind-specific blind-spot manifests, and collapse authority derived from
+consequence-bearing rather than competence.
+
+Retained below for the reasoning it still carries:
 
 - **Language-model agents** — B4 (independence ledger) becomes critical rather than
   prudent, because correlated blindness is the default and is invisible. `θᵢ` includes the
@@ -28,11 +35,19 @@ owners → it is a trust boundary, and D12t (certificates) stops being optional.
 with hard internal membranes is recommended for the first two; the third forces a spec repo
 plus federation.
 
-### 4. Does the collective act, or only know?
-If it acts, C3 (probes) and D2's §16 action-relevant projection become the spine, and
-"which distinctions matter" gets settled by consequences rather than taste — a much better
-teacher. If it only knows, the yield gate (D4t) is doing all the work of keeping the system
-honest, alone.
+### 4. Does the collective act, or only know? — **ANSWERED**
+**Both: it acts on `M` and maintains it.** Run in full at
+[`runs/001-act-and-preserve.md`](runs/001-act-and-preserve.md); mechanisms in
+[`08-action.md`](08-action.md). The recovered dimension is **foreclosure**, and the run
+produced three new mechanisms (action=probe, epistemic cost of irreversibility, typed
+collapse authority) plus one unwelcome finding: because the collective acts, Design A's
+intersection semantics hold **between** actions, not across them, and A-mode regions need
+epoch markers.
+
+**New open decision this created:** no non-arbitrary threshold exists for how much
+foreclosure requires whose authority. It is purpose-relative
+(`C_safety … C_autonomy`), and the choice sits outside the framework. Must be declared, not
+derived.
 
 ### 5. Do participants carry history?
 Identity-through-continuous-history (D1) only means something if there is persistent state

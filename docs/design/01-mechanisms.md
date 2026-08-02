@@ -153,18 +153,27 @@ Growing error is an automatable signal that the abstraction is incomplete, and D
 the remedy menu. Requires a modeled `F`, which is why this is `deep` — but it is the best
 single quality metric in the design.
 
-### B7 · Missing-dimension detectors `strong`
-**Claim (D2 §4, §7, §8).** Discarded variables return as memory, as noise, or as apparent
-crossings.
-**Shape.** Three cheap monitors:
-- *Non-Markovian detector* — if adding history improves prediction of a macrostate, the
+### B7 · Generative-region detectors `strong`
+**Claim (D2 §4, §7, §8; D5 §"where generative regions appear").** Discarded variables return
+as memory, as noise, or as apparent crossings — and more generally, generativity appears
+wherever the current representation repeatedly fails.
+**Shape.** Nine detectors, catalogued in full in [`09-fields.md`](09-fields.md). The
+originals:
+- *Non-Markovian / hysteresis* — if adding history improves prediction of a macrostate, the
   state variable is missing a dimension.
-- *Apparent-crossing detector* — if two observed trajectories converge then diverge, the
-  observation space is under-dimensioned.
-- *Threshold-legitimacy check* — for every categorical field, test whether the boundary
+- *Apparent-crossing* — if two observed trajectories converge then diverge, the observation
+  space is under-dimensioned.
+- *Threshold-legitimacy* — for every categorical field, test whether the boundary
   corresponds to actual dynamical separation (density gap, hysteresis) or is purely the
   observer's rule.
-All three convert "it's just noisy" into "there is structure in a dimension you are not
+
+Added from D5: *seam* (= B5 obstruction), *hole*, *curvature* (= holonomy, Design B),
+*bifurcation*, **frustration**, *degeneracy* (= A5), *singularity*, *boundary case*.
+Frustration — a constraint set admitting no joint satisfaction — is first-class: publish
+the trade-off surface, never "infeasible." Singularity returns *"the current distinction is
+no longer adequate here"*, which is neither `unknown` nor `error`.
+
+All of them convert "it's just noisy" into "there is structure in a dimension you are not
 measuring."
 
 ### B8 · Categories carry their continuous coordinate `core`
@@ -195,14 +204,17 @@ causally meaningful, approximately closed, scale-appropriate.
 ### C1 · Structured synthesis output `core`
 **Claim (D2 §"better synthesis preserves disagreement").** Averaging destroys exactly the
 information you need; the midpoint may correspond to no real state.
-**Shape.** Synthesis emits an object, never a value:
+**Shape.** Synthesis emits a **field**, never a value and never a bucket list — see
+[`09-fields.md`](09-fields.md), which corrects the earlier list form:
 ```
-M = { shared_invariants,
-      perspective_specific,
-      conflicts,
-      uncertainties,
-      unobserved_regions }
+M = (P, D, R, C, T)      P positions (provenance intact) · D dimensions ·
+                         R typed relations · C contexts · T transitions
 ```
+Derived views over the field recover the original buckets — shared invariants,
+perspective-specific features, conflicts, uncertainties, unobserved regions — plus
+`foreclosed` (see `08-action.md` M3), the regions of possibility this collective has
+permanently removed. Positions may be regions or distributions, never forced to points.
+`M₁ … Mₘ` with an atlas; there is no single authoritative field.
 
 ### C2 · Plural, non-privileged synthesizers `core`
 **Claim (D2 §"the collective observer becomes another projection").** `Σ: Y₁×…×Yₙ → Z` is
@@ -220,6 +232,29 @@ values of `O*`, then `O*` is high-value.
 **Why it matters.** Without this the architecture is passive and everything above is
 elaborate bookkeeping. When *no* possible observation discriminates, that fact is itself a
 finding: the disagreement is metaphysical, linguistic, or underdetermined.
+
+### C3b · Action and probe are one category `core`
+**Claim (D2 §16; run 001).** A probe is an action with near-zero foreclosure; an action is a
+probe with consequences.
+**Shape.** One type carrying `(collapse cost, information yield)`. Prefer, among actions of
+comparable expected value, the highest yield per unit foreclosure. Under uncertainty prefer
+the action that is also a probe — it is the only class that increases `M` while acting on
+it. Full treatment in [`08-action.md`](08-action.md).
+
+### C4b · Epistemic cost of irreversibility `strong`
+**Claim (D6 §8; run 001).** The possibility space is itself state — `dX/dt = G(x, X)` — so
+an irreversible action deletes regions of it.
+**Shape.** `epistemic_cost(a) = measure of hypotheses rendered permanently untestable by a`,
+published alongside expected value. Risk frameworks price expected loss; none price
+destroyed falsifiability. First approximation: count the probes the action makes impossible.
+
+### C5 · Collapse authority typed by foreclosure `core`
+**Claim (run 001 §9; `07-participants.md`).** Foreclosure and consequence-bearing are
+coupled, and only one kind of participant stands in the consequence-bearing relation.
+**Shape.** Authority to collapse `M` into an action is indexed to the action's foreclosure
+`E` and its consequence-bearer `W`, not to participant status. Probe-class actions: anyone.
+Externally-borne or high-foreclosure actions: human authority. Total foreclosure: human
+authority plus a published statement of what is being made permanently untestable.
 
 ### C4 · Yield scoring → cover redesign `strong`
 **Claim (D2 §"toward a collective epistemic geometry").** The quality of collective

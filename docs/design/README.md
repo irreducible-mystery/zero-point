@@ -14,6 +14,9 @@ interact, structured around three source documents:
 | **D1** | *Biological identity as a dynamical system* | identity, boundary, viability, repair, lineage |
 | **D2** | *Projection between scales; collective observation* | projection, blind spots, fusion, disagreement |
 | **D3** | *Gödel/Turing/ontological tension* | contradiction discipline, theory limits, generative paradox |
+| **D4** | *Framework run: organism identity* | the run protocol, worked |
+| **D5** | *Binary → structured field* | the field form, generative-region catalog |
+| **D6** | *Beyond multitudes* | escalation ladder, generated dimensions, mutual constitution |
 
 The design is not a metaphor applied to software. Each mechanism below is a concrete
 artifact — a schema, a check, a store, a CI gate — with the source claim it encodes.
@@ -34,6 +37,16 @@ artifact — a schema, a check, a store, a CI gate — with the source claim it 
    through all three, and a recommendation.
 7. **[06-open-decisions.md](06-open-decisions.md)** — what is still unresolved, the
    known risks, and what would falsify parts of this design.
+8. **[07-participants.md](07-participants.md)** — human and AI participants, and why the
+   distinction is preserved by function rather than by status.
+9. **[08-action.md](08-action.md)** — the collective acts on `M` *and* maintains it:
+   foreclosure, the epistemic cost of irreversibility, and typed collapse authority.
+10. **[09-fields.md](09-fields.md)** — `M` upgraded from a bucket list to a field, the
+    nine-detector generative-region catalog, and an honest placement of this design on the
+    binary → open-becoming ladder.
+11. **[runs/](runs/)** — the framework applied to actual tensions.
+    [`001-act-and-preserve`](runs/001-act-and-preserve.md) is the worked example, and the
+    source of most of `08`.
 
 ## The one-paragraph version
 
